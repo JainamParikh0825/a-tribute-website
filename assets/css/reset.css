@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+ul[role='list'],
+ol[role='list']{
+    list-style: none;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}

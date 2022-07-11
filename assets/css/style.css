@@ -1,0 +1,104 @@
+:root{
+    --primary-background-color: #a3b18a;
+    --primary-text-color: #344e41;
+}
+
+body{
+    background-color: #a3b18a;
+    border: 10px solid var(--primary-text-color);
+}
+
+.container{
+    width: 50%;
+    margin-inline: auto;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+section{
+    margin: 30px 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.header img{
+    width: 260px;
+    height: 350px;
+    border-radius: 2%;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.personal-info .name{
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}
+
+.personal-info .designation{
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.details p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: var(--primary-text-color);
+}
+
+.read-more p{
+    text-align: right;
+}
+
+@media screen and (max-width: 1280px) {
+    .container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .container{
+        padding: 15px;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header img{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .personal-info .name {
+        font-size: 2.5rem;
+    }
+
+    .personal-info .designation{
+        text-align: center;
+    }
+
+    .read-more p {
+        text-align: center;
+    }
+}
